@@ -1,13 +1,18 @@
-target/
+# Ignore all target and build directories
+**/target/
+**/build/
+
+# Re-include important properties inside ignored dirs
+!**/src/main/**/target/db.properties
+!**/src/test/**/target/token.properties
+!**/src/main/**/build/db.properties
+!**/src/test/**/build/token.properties
+
+# Maven wrapper
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -17,7 +22,7 @@ target/
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
@@ -27,12 +32,9 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
 
-### Mac OS ###
+### macOS ###
 .DS_Store
