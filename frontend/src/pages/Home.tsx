@@ -85,7 +85,6 @@ const HomePage = () => {
                     </div>
                 )}
 
-                {/* Search and Filters */}
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-6">
                     <input
                         type="text"

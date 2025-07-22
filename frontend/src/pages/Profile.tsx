@@ -129,7 +129,6 @@ export default function Profile() {
                     )}
                 </section>
 
-                {/* Events Hosted */}
                 <section>
                 <h2 className="text-2xl font-semibold mb-4">Events Hosted</h2>
                     {createdEvents.length === 0 ? (

@@ -117,7 +117,7 @@ export default function Event() {
                 initialBudget: event.initialBudget,
                 timeCreated: event.timeCreated,
                 timeFinished: event.timeFinished,
-                actions: [] // backend may not need nested actions here
+                actions: []
             }
         };
 

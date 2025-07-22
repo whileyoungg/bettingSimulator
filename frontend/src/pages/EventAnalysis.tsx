@@ -51,7 +51,6 @@ export default function EventAnalysis() {
     }, [id]);
 
     useEffect(() => {
-        // Wait for creatorUsername to be set
         if (creatorUsername) {
             if (sessionUser?.username !== creatorUsername) {
                 navigate(`/events/${id}`);

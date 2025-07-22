@@ -42,18 +42,14 @@ export default function Navbar() {
     const checkDeposits = async () => {
         const userStr = sessionStorage.getItem("loggedInUser");
         if (!userStr) return;
-
         const user = JSON.parse(userStr);
         const username = user.username;
 
         try {
-            // PATCH to update deposits
             await fetch("http://localhost:8080/api/deposit", { method: "PATCH" });
 
-            // ✅ NEW: PATCH to update withdrawals
             await fetch("http://localhost:8080/api/withdraw", { method: "PATCH" });
 
-            // Refresh user data
             const userRes = await fetch(`http://localhost:8080/api/sessionUpdate?username=${username}`);
             if (!userRes.ok) {
                 console.warn("Failed to fetch updated user session");
