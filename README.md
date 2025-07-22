@@ -32,3 +32,12 @@ Database
 
 PostgreSQL schema for users, events, participations
 
+Tests
+JUnit & Mockito used for backend unit testing
+
+Sample controller, logic, and repository layer tests included
+
+Test coverage for registration, event management, verification, and business constraint
+
+
+
