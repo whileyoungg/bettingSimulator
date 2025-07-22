@@ -7,16 +7,28 @@ Tech Stack
 
 Modules Overview
 Backend (Java)
+
 RESTful API using Spring Boot
+
 Business Logic encapsulated in Logic classes
+
 Data validation, encryption (e.g., BCrypt), and verification
+
 Custom exceptions and domain records for users, events, and participation
+
 Mock integration for deposits/withdrawals
+
 Frontend (React)
+
 TypeScript-based UI
+
 Event creation, participation, and viewin
+
 User registration and session management
+
 API connection to backend services
+
 Database
+
 PostgreSQL schema for users, events, participations
 
