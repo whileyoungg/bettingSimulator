@@ -1,3 +1,13 @@
+**/target/
+**/build/
+
+# Re-include important properties inside ignored dirs
+!**/src/main/**/target/db.properties
+!**/src/test/**/target/token.properties
+!**/src/main/**/build/db.properties
+!**/src/main/resources/db.properties
+!**/src/main/resources/token.properties
+!**/src/test/**/build/token.properties
 # Logs
 logs
 *.log
