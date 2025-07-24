@@ -1,43 +1,17 @@
-# Ignore all target and build directories
+# Ignore target and build directories
 **/target/
 **/build/
 
-# Re-include important properties inside ignored dirs
+# Re-include paths to properties files
+!**/src/main/
+!**/src/test/
+!**/src/main/resources/
+!**/src/test/**/build/
+!**/src/main/**/build/
+
 !**/src/main/**/target/db.properties
 !**/src/test/**/target/token.properties
 !**/src/main/**/build/db.properties
+!**/src/test/**/build/token.properties
 !**/src/main/resources/db.properties
 !**/src/main/resources/token.properties
-!**/src/test/**/build/token.properties
-
-
-# Maven wrapper
-!.mvn/wrapper/maven-wrapper.jar
-
-### IntelliJ IDEA ###
-.idea/
-*.iws
-*.iml
-*.ipr
-
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings/
-.springBeans
-.sts4-cache
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
-
-### macOS ###
-.DS_Store
